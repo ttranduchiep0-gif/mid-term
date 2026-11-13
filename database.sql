@@ -11,8 +11,6 @@ CREATE TABLE IF NOT EXISTS Users (
   UNIQUE KEY uq_users_admin_email (admin_email)
 );
 
--- Dữ liệu mẫu để trang frontend có nội dung khi mở lần đầu.
--- Mật khẩu mẫu là chuỗi đã mã hóa; hãy thêm tài khoản qua admin.php để tạo mật khẩu mới.
 INSERT IGNORE INTO Users (admin_email, admin_password, images) VALUES
 ('nguyen.an@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', NULL),
 ('tran.binh@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', NULL);
